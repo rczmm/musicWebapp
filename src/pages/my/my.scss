@@ -1,0 +1,28 @@
+@import "taro-ui-vue3/dist/style/components/grid.scss";
+@import "taro-ui-vue3/dist/style/components/search-bar.scss";
+@import "taro-ui-vue3/dist/style/components/tabs.scss";
+@import "taro-ui-vue3/dist/style/components/divider.scss";
+
+.my-view {
+  background-color: rgb(241, 245, 248);
+}
+
+.my-card-view {
+  background-color: rgb(255, 255, 255);
+  margin: 20px 30px;
+  border-radius: 20px;
+}
+
+.my-info-view {
+  display: flex;
+  align-items: center;
+}
+
+.my-image {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  border-radius: 150px;
+  object-fit: contain;
+}

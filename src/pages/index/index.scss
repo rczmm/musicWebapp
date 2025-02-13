@@ -1,0 +1,91 @@
+@import "taro-ui-vue3/dist/style/components/search-bar.scss";
+
+.scroll-category-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-view {
+  margin: 20px auto;
+}
+
+.main-view {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.main-item {
+  position: relative;
+  margin: 20px 20px;
+  text-wrap: nowrap;
+  height: 300px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("https://i0.hdslb.com/bfs/bangumi/image/571c98fe1d9b532c98cb5aa23b9b875ced8dcae0.jpg@466w_622h.webp");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main-item-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-align: right;
+}
+
+.category-view {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  position: relative;
+  margin: 20px 20px;
+  height: 125px;
+  width: 35%;
+  border-radius: 20px;
+  background-image: url("https://i0.hdslb.com/bfs/bangumi/image/1ddf19a012d41d29a9e0a13c5f951be83d47578c.png@466w_622h.webp");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.music-list {
+  margin: 20px 30px;
+  padding: 20px;
+}
+
+.music-item {
+  margin: 20px 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-content: center;
+}
+
+.music-item-info {
+  display: block;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.song-list {
+  padding: 20px;
+}
+
+.tips-text {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}

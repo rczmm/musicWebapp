@@ -1,0 +1,38 @@
+.song-view {
+  margin: 20px 40px;
+  display: flex;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.song-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-song {
+  display: flex;
+}
+
+.song-tag {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(241, 248, 255)
+}
+
+.song-title {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.song-singer {
+  padding: 10px;
+}
