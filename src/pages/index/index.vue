@@ -13,7 +13,7 @@
         <swiper-item v-for="(item, idx) in  [
         'https://i0.hdslb.com/bfs/archive/06281b0277e49b968987bb58298cb6e1ad132f8d.jpg',
         'https://i0.hdslb.com/bfs/archive/bc473ee3fb1895005e5163a1e58afdb4a6ef45d3.jpg',
-        'https://img14.360buyimg.com/babel/s700x360_jfs/t1/4099/12/2578/101668/5b971b4bE65ae279d/89dd1764797acfd9.jpg!q90!cc_350x180',
+        'https://i1.hdslb.com/bfs/archive/9a1899fe5edf56c36ed640b9789e0514f2cfcf7a.jpg',
       ]" :key="idx">
           <image :src="item" class="slide-image"/>
         </swiper-item>
@@ -47,16 +47,17 @@
       </view>
 
 
-      <view>今日推荐歌曲</view>
-
+      <view class="tips-text">
+        <text>今日推荐歌曲</text>
+      </view>
       <view class="music-list">
-        <view class="music-item" v-for="item in 3">
+        <view class="music-item" v-for="music in musicList">
           <image class="music-img"
-                 src="https://i2.hdslb.com/bfs/archive/5c9ff55cfa2b637a087493dfdd0478eecc594f83.jpg">
+                 :src="music.image">
           </image>
           <view class="music-item-info">
-            <view class="music-name">歌曲名</view>
-            <view class="music-singer">歌手</view>
+            <view class="music-name">{{music.title}}</view>
+            <view class="music-singer">{{ music.singer}}</view>
           </view>
         </view>
       </view>
@@ -75,14 +76,6 @@
 import './index.scss';
 import Player from "../../components/Player/Player.vue";
 import SongCard from "../../components/SongCard/SongCard.vue";
-import {Song} from "../../components/SongCard/Song";
-
-const song: Song = {
-  title: 'title',
-  image: 'https://i0.hdslb.com/bfs/archive/6eeddb567699fc9f1f944f1256ba4dd5477cec2c.jpg',
-  singer: 'singer',
-  tag: 'tag'
-}
 
 const songList = [
   {
@@ -98,5 +91,18 @@ const songList = [
     tag: '本周热播'
   }
 ]
+
+const musicList = [
+  {
+    title: "葡萄成熟时",
+    singer: "陈奕迅",
+    image: "https://i0.hdslb.com/bfs/archive/75fbeda3d3f0e54785646e02615bd82bd0c3dc88.jpg"
+  },
+  {
+    title: "零下几分钟",
+    singer: "陈奕迅",
+    image: "https://i0.hdslb.com/bfs/archive/21d97aeca78757f6bd9ce9923d2a491618d9906a.jpg"
+  },
+];
 
 </script>
