@@ -90,7 +90,7 @@ const songList = [
     singer: '林俊杰',
     tag: '本周热播'
   }
-]
+];
 
 const musicList = [
   {

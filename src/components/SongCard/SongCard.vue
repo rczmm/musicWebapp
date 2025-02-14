@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 
-import './index.scss';
+import './SongCard.scss';
 
 defineProps({
   song: {

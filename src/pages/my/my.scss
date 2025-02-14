@@ -26,3 +26,8 @@
   border-radius: 150px;
   object-fit: contain;
 }
+
+.item {
+  display: inline-block; /* 或者使用 flex */
+  margin-right: 10px; /* 设置子元素之间的间距 */
+}
