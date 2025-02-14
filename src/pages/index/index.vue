@@ -43,7 +43,9 @@
         <view class="tips-text">
           <text>大家都在听</text>
         </view>
-        <song-card v-for="song in songList" :song="song"></song-card>
+        <view class="song-card" v-for="song in songList">
+          <SongCard :song="song"></SongCard>
+        </view>
       </view>
 
 
@@ -56,8 +58,8 @@
                  :src="music.image">
           </image>
           <view class="music-item-info">
-            <view class="music-name">{{music.title}}</view>
-            <view class="music-singer">{{ music.singer}}</view>
+            <view class="music-name">{{ music.title }}</view>
+            <view class="music-singer">{{ music.singer }}</view>
           </view>
         </view>
       </view>

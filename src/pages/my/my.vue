@@ -33,13 +33,79 @@
       @click="handleChick"
     >
       <at-tabs-pane :current="current" :index="0">
-        <song-card v-for="song in songList" :song="song"></song-card>
+        <view class="song-card" v-for="song in songList">
+          <view class="song-view">
+
+            <image class="song-image" :src="song.image"/>
+
+            <view class="song-info">
+              <view class="song-song">
+                <view class="song-title">
+                  <text>{{ song.title }}</text>
+                </view>
+                <view class="song-tag">
+                  <text> {{ song.tag }}</text>
+                </view>
+              </view>
+              <view class="song-singer">
+                <text>
+                  {{ song.singer }}
+                </text>
+              </view>
+            </view>
+
+          </view>
+        </view>
       </at-tabs-pane>
       <at-tabs-pane :current="current" :index="1">
-        <view class='tab-content'>标签页一的内容</view>
+        <view class="song-card" v-for="song in songList">
+          <view class="song-view">
+
+            <image class="song-image" :src="song.image"/>
+
+            <view class="song-info">
+              <view class="song-song">
+                <view class="song-title">
+                  <text>{{ song.title }}</text>
+                </view>
+                <view class="song-tag">
+                  <text> {{ song.tag }}</text>
+                </view>
+              </view>
+              <view class="song-singer">
+                <text>
+                  {{ song.singer }}
+                </text>
+              </view>
+            </view>
+
+          </view>
+        </view>
       </at-tabs-pane>
       <at-tabs-pane :current="current" :index="2">
-        <view class='tab-content'>标签页一的内容</view>
+        <view class="song-card" v-for="song in songList">
+          <view class="song-view">
+
+            <image class="song-image" :src="song.image"/>
+
+            <view class="song-info">
+              <view class="song-song">
+                <view class="song-title">
+                  <text>{{ song.title }}</text>
+                </view>
+                <view class="song-tag">
+                  <text> {{ song.tag }}</text>
+                </view>
+              </view>
+              <view class="song-singer">
+                <text>
+                  {{ song.singer }}
+                </text>
+              </view>
+            </view>
+
+          </view>
+        </view>
       </at-tabs-pane>
     </at-tabs>
 
@@ -50,8 +116,6 @@
 import './my.scss';
 import {ref} from "vue";
 import PlayList from "../../components/PlayList/PlayList.vue";
-import SongCard from "../../components/SongCard/SongCard.vue";
-
 
 const current = ref(0);
 

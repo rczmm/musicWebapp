@@ -28,8 +28,7 @@ import './SongCard.scss';
 
 defineProps({
   song: {
-    type: Object,
-    required: true
+    type: Object
   }
 })
 
