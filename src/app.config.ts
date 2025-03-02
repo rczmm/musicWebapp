@@ -1,7 +1,9 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/my/my'
+    'pages/my/my',
+    'pages/musicPlayer/index',
+    'pages/community/community'
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -22,7 +24,11 @@ export default {
       {
         pagePath: 'pages/my/my',
         text: '我的',
-      }
+      },
+      {
+        pagePath: 'pages/community/community',
+        text: '社区'
+      },
     ]
   }
 }

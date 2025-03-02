@@ -1,5 +1,5 @@
 <template>
-  <view class="player-view">
+  <view class="player-view" @tap="navToPlayer">
     <progress :percent="pro" stroke-width="2" :active="true" active-color="blue"
               activeMode="forwards"
               borderRadius="100px"
@@ -87,4 +87,11 @@ const updateProgress = () => {
 };
 audioContext.onTimeUpdate(updateProgress);
 setInterval(updateProgress, 50);
+
+const navToPlayer = () => {
+  Taro.navigateTo({
+    url: '../musicPlayer/index'
+  })
+}
+
 </script>
